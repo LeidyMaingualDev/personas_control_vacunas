@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login & Registro Vacunas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="card">
+    <!-- Caja de Login -->
+    <!-- Caja de Login -->
+    <div id="loginBox" class="content">
+      <h2>Iniciar Sesión</h2>
+      <div class="content-row">
+        <form id="loginForm">
+          <input type="email" id="loginEmail" placeholder="Email" required>
+          <input type="password" id="loginPassword" placeholder="Password" required>
+          <button type="submit">Iniciar Sesión</button>
+        </form>
+        <img src="imagenlogin.jpg" alt="Imagen de login">
+      </div>
+      <p>¿No tienes cuenta? <a href="#" id="showRegister">Regístrate</a></p>
+    </div>
+
+
+    <!-- Caja de Registro -->
+    <div id="registerBox" class="hidden">
+      <h2>Registro</h2>
+      <form id="registerForm">
+        <input type="text" id="regName" placeholder="Nombre" required>
+        <input type="email" id="regEmail" placeholder="Correo" required>
+        <input type="password" id="regPassword" placeholder="Contraseña" required>
+        <select id="regRole" required>
+          <option value="">-- Selecciona un rol --</option>
+          <option value="ASISTENTE">Asistente</option>
+          <option value="DOCTOR">Doctor</option>
+          <option value="ADMIN">Admin</option>
+        </select>
+        <button type="submit">Registrar</button>
+      </form>
+      <p>¿Ya tienes cuenta? <a href="#" id="showLogin">Inicia sesión aquí</a></p>
+    </div>
+  </div>
+
+  <p id="resultado"></p>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
